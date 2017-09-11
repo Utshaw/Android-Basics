@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Preferences</string>
+    <string name="default_value">John Doe</string>
+
+    <string-array name="lists">
+        <item>RED</item>
+        <item>GREEN</item>
+        <item>BLUE</item>
+    </string-array>
+
+    <string name="red_color_colorPrimary">#F44336</string>
+    <string name="red_color_colorPrimaryDark">#D32F2F</string>
+
+    <string-array name="lValuesPrimary">
+        <item>@string/red_color_colorPrimary</item>
+        <item>#4CAF50</item>
+        <item>#2196F3</item>
+    </string-array>
+
+
+    <string-array name="lValuesPrimaryDark">
+        <item>@string/red_color_colorPrimaryDark</item>
+        <item>#388E3C</item>
+        <item>#1976D2</item>
+    </string-array>
+
+</resources>
