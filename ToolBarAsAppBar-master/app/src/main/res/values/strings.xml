@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">TestApp</string>
+
+    <string-array name="urls">
+        <item>Image 1</item>
+        <item>Image 2</item>
+        <item>Image 3</item>
+        <item>Image 4</item>
+        <item>Image 5</item>
+        <item>Image 6</item>
+        <item>Image 6</item>
+        <item>Image 6</item>
+        <item>Image 6</item>
+        <item>Image 6</item>
+        <item>Image 6</item>
+        <item>Image 6</item>
+        <item>Image 6</item>
+        <item>Image 6</item>
+        <item>Image 6</item>
+        <item>Image 6</item>
+        <item>Image 6</item>
+        <item>Image 6</item>
+        <item>Image 6</item>
+        <item>Image 6</item>
+        <item>Image 6</item>
+        <item>Image 6</item>
+    </string-array>
+
+    <string-array name="imageUrls">
+        <item>http://carpng.com/wp-content/uploads/thumb/red-cartoon-car-8056-0.png</item>
+        <item>http://clipart-finder.com/data/mini/cartoon_car.png</item>
+        <item>http://www.clker.com/cliparts/F/7/N/i/3/S/pink-car.svg</item>
+        <item>http://carpng.com/wp-content/uploads/thumb/red-cartoon-car-8056-0.png</item>
+        <item>http://carpng.com/wp-content/uploads/thumb/red-cartoon-car-8056-0.png</item>
+        <item>http://carpng.com/wp-content/uploads/thumb/red-cartoon-car-8056-0.png</item>
+    </string-array>
+
+    <string name="red_string">Red</string>
+    <string name="blue_string">Blue</string>
+    <string name="green_string">Green</string>
+
+</resources>
