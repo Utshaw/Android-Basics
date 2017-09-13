@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF8800"
+    android:padding="16dp"
+    tools:context="com.wordpress.farhantanvirutshaw.c_174multithreading.MainActivity">
+
+    <EditText
+        android:id="@+id/download_url"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFF"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/download_image"
+        android:layout_below="@id/download_url"
+        android:layout_margin="8dp"
+        android:background="#99CC00"
+        android:onClick="downloadImage"
+        android:text="Download Image"
+        android:layout_alignLeft="@id/download_url"
+        android:layout_alignRight="@id/download_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/loading_section"
+        android:layout_below="@id/download_image"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/loading_message"
+            style="?android:attr/textAppearanceSmall"
+            android:gravity="center"
+            android:text="Loading......"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/download_progress"
+            android:indeterminate="true"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:entries="@array/urls"
+        android:id="@+id/url_list"
+        android:layout_alignLeft="@id/download_image"
+        android:layout_below="@id/loading_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </ListView>
+
+</RelativeLayout>
