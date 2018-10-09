@@ -23,6 +23,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.facebook.CallbackManager;
+import com.facebook.share.widget.ShareDialog;
+
 import java.util.ArrayList;
 
 /*
@@ -32,6 +35,11 @@ import java.util.ArrayList;
 public class AndroidFlavorAdapter extends ArrayAdapter<AndroidFlavor> {
 
     private static final String LOG_TAG = AndroidFlavorAdapter.class.getSimpleName();
+
+    CallbackManager callbackManager;
+    ShareDialog shareDialog;
+
+    private Activity context;
 
     /**
      * This is our own custom constructor (it doesn't mirror a superclass constructor).
@@ -64,7 +72,7 @@ public class AndroidFlavorAdapter extends ArrayAdapter<AndroidFlavor> {
         View listItemView = convertView;
         if(listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item, parent, false);
+                    R.layout.list_item_post, parent, false);
         }
 
         // Get the {@link AndroidFlavor} object located at this position in the list
